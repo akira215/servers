@@ -70,7 +70,7 @@ Hot-Plug/Add physical device as new virtual SCSI disk
 qm set 592 -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
 ```
 ```
-  update VM 592: -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
+->  update VM 592: -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
 ```
 
 Hot-Unplug/Remove virtual disk
@@ -78,5 +78,5 @@ Hot-Unplug/Remove virtual disk
 qm unlink 592 --idlist scsi2
 ```
 ```
-  update VM 592: -delete scsi2
+->  update VM 592: -delete scsi2
 ```
