@@ -4,6 +4,8 @@
 
 ## Téléchargement ISO
 
+Proxmox save iso in /var/lib/vz/template/iso/
+
 ````bash
 cd /var/lib/vz/template/iso
 wget -O openmediavault_5.5.11-amd64.iso https://sourceforge.net/projects/openmediavault/files/5.5.11/openmediavault_5.5.11-amd64.iso/download
