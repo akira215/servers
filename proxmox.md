@@ -80,3 +80,5 @@ qm unlink 592 --idlist scsi2
 ```
 ->  update VM 592: -delete scsi2
 ```
+
+Stop & Restart VM
