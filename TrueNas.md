@@ -71,3 +71,9 @@ Add a postinit command in System Settings - Advanced - Init/Shutdown Scripts:
 ```bash
 echo "performance" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
+
+# Apps
+```bash
+docker ps
+docker exec -it <NAMES> <command>
+```
