@@ -92,7 +92,20 @@ Bridge: vmbr0
 Model: VirtIO
 ```
 
-## MAJ système OMV
+## First steps with OMV
+
+Login  admin:openmediavault
+
+Create an admin: Utilisateurs > Utilisateurs > + ...
+Add the new user in the `openmediavault-admin` group
+
+logout and login with new user
+remove the admin from `openmediavault-admin` group
+```bash
+deluser admin openmediavault-admin
+```
+
+### MAJ système OMV
 
 ```bash
 apt update && apt full-upgrade -y
@@ -100,7 +113,7 @@ apt update && apt full-upgrade -y
 
 
 
-## Installation qemu-agent
+### Installation qemu-agent
 
 ```bash
 apt install -y qemu-guest-agent
@@ -108,7 +121,7 @@ reboot
 ```
 
 
-## Installation des OMV-extra
+### Installation des OMV-extra
 
 ```bash
 wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash
