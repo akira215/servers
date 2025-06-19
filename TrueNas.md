@@ -15,4 +15,5 @@ Disable secure boot (BIOS > Boot > Secure Boot > OS Type : Other OS
 Restart with USB stick in the server
 
 Select 1 - Administrative user (truenas_admin)
+Warning ! Password will be QWERTY
 
