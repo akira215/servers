@@ -41,6 +41,14 @@ sudo lspci -vvv | grep "ASPM"
 lspci -vv | awk '/ASPM/{print $0}' RS= | grep --color -P '(^[a-z0-9:.]+|ASPM )'
 ```
 
+Find a driver corresponding on a device using `/sys`
+```bash
+$ sudo lspci
+...
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168B PCI Express Gigabit Ethernet controller (rev 01)
+$ find /sys | grep drivers.*02:00
+/sys/bus/pci/drivers/r8169/0000:02:00.0
+```
 
 
 Check available governors
