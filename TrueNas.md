@@ -26,6 +26,7 @@ System > General Settings > Manage Configuration (top-right) > upload file (on t
 
 Check states
 ```bash
+powertop --calibrate
 powertop --auto-tune
 powertop
 ```
