@@ -25,9 +25,11 @@ crontab -e
 @reboot echo "schedutil" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null 2>&1
 ```
 
+***
+
+
 
 # Installation d'OMV5 sur Proxmox
-
 
 
 ## Téléchargement ISO
@@ -38,6 +40,40 @@ Proxmox save iso in /var/lib/vz/template/iso/
 cd /var/lib/vz/template/iso
 wget -O openmediavault_5.5.11-amd64.iso https://sourceforge.net/projects/openmediavault/files/5.5.11/openmediavault_5.5.11-amd64.iso/download
 ````
+## Création de la VM
+
+Sur la GUI Proxmox Host > Create VM (top right)
+
+#### General
+ID: 140
+Name : OMV
+Start at boot : Enable
+
+#### OS
+Storage: local
+ISO Image : openmediavault_7...
+Type : Linux
+Version : put the last available
+
+#### System
+SCSI Controller: VirtIO SCSI (single or note)
+Qemu Agent : enable
+BIOS: Default (SeaBIOS)
+
+
+#### Disks
+Storage: local-lvm
+Disk size (GiB) : 20
+Cache: Write back
+Discard: Enable
+SSD emulation: Enable
+
+#### CPU
+Core: 2
+
+#### Memory
+Memory (MiB): 4096
+Minimum memory (MiB): 2048
 
 ## MAJ système OMV
 
