@@ -45,40 +45,52 @@ wget -O openmediavault_5.5.11-amd64.iso https://sourceforge.net/projects/openmed
 Sur la GUI Proxmox Host > Create VM (top right)
 
 #### General
+```bash
 ID: 140
 Name : OMV
 Start at boot : Enable
+```
 
 #### OS
+```bash
 Storage: local
 ISO Image : openmediavault_7...
 Type : Linux
 Version : put the last available
+```
 
 #### System
+```bash
 SCSI Controller: VirtIO SCSI (single or note)
 Qemu Agent : enable
 BIOS: Default (SeaBIOS)
-
+```
 
 #### Disks
+```bash
 Storage: local-lvm
 Disk size (GiB) : 20
 Cache: Write back
 Discard: Enable
 SSD emulation: Enable
+```
 
 #### CPU
+```bash
 Core: 2
+```
 
 #### Memory
+```bash
 Memory (MiB): 4096
 Minimum memory (MiB): 2048
+```
 
 #### Network
+```bash
 Bridge: vmbr0
 Model: VirtIO
-
+```
 
 ## MAJ système OMV
 
