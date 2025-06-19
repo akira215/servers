@@ -21,6 +21,10 @@ Warning ! Password will be QWERTY
 
 System > General Settings > Manage Configuration (top-right) > upload file (on the computer)
 
+Mettre le shell en clavier francais
+```bash
+kbdcontrol -l fr.iso.acc
+```
 
 # Consumption
 
