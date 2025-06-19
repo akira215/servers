@@ -56,6 +56,11 @@ $ find /sys | grep drivers.*02:00
 
 Optimize realtek drivers
 Refer to script
+find ID of te network adapter running `lspci`
+```bash
+sudo echo 1 > /sys/bus/pci/devices/0000:01:00.0/link/l1_aspm
+```
+
 
 Check available governors
 ```bash
