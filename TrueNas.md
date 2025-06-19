@@ -32,7 +32,7 @@ powertop --calibrate
 powertop --auto-tune
 powertop
 ```
-Check tab Idle stats > Pkg (HW) shall be above C3
+Check tab Idle stats > Pkg (HW) shall be above C3. Check on server, disconnecting the network cable for a while !
 
 Check devices that support ASPM
 ```bash
@@ -40,6 +40,8 @@ sudo lspci -vvv | grep "ASPM .*abled"
 sudo lspci -vvv | grep "ASPM"
 lspci -vv | awk '/ASPM/{print $0}' RS= | grep --color -P '(^[a-z0-9:.]+|ASPM )'
 ```
+
+
 
 Check available governors
 ```bash
