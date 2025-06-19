@@ -166,7 +166,7 @@ Hot-Plug/Add physical device as new virtual SCSI disk
 qm set 140 -scsi1 /dev/disk/by-id/ata-Go-Infinity_221025628994
 ```
 ```
-->  update VM 592: -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
+->  update VM 140: -scsi1 /dev/disk/by-id/ata-Go-Infinity_221025628994
 ```
 
 Hot-Unplug/Remove virtual disk
