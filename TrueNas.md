@@ -17,3 +17,23 @@ Restart with USB stick in the server
 Select 1 - Administrative user (truenas_admin)
 Warning ! Password will be QWERTY
 
+# Retrieve config:
+
+System > General Settings > Manage Configuration (top-right) > upload file (on the computer)
+
+
+# Consumption
+
+Check states
+```bash
+powertop --auto-tune
+powertop
+```
+Check tab Idle stats > Pkg (HW) shall be above C3
+
+Check devices that support ASPM
+```bash
+sudo lspci -vvv | grep "ASPM .*abled"
+sudo lspci -vvv | grep "ASPM"
+lspci -vv | awk '/ASPM/{print $0}' RS= | grep --color -P '(^[a-z0-9:.]+|ASPM )'
+```
