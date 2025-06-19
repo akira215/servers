@@ -40,3 +40,13 @@ sudo lspci -vvv | grep "ASPM .*abled"
 sudo lspci -vvv | grep "ASPM"
 lspci -vv | awk '/ASPM/{print $0}' RS= | grep --color -P '(^[a-z0-9:.]+|ASPM )'
 ```
+
+Check available governors
+```bash
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+```
+
+Add a postinit command in System Settings - Advanced - Init/Shutdown Scripts:
+```bash
+echo "performance" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+```
