@@ -54,16 +54,8 @@ $ find /sys | grep drivers.*02:00
 /sys/bus/pci/drivers/r8169/0000:02:00.0
 ```
 
-Install realtek drivers
-```bash
-sudo apt-get install build-essential
-sudo apt-get install linux-generic
-sudo apt-get install linux-headers-`uname -r`
-
-tar -xjvf r8168-8.049.02.tar.bz2
-cd r8168-8.049.02
-bash autorun.sh
-```
+Optimize realtek drivers
+Refer to script
 
 Check available governors
 ```bash
