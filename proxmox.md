@@ -163,7 +163,7 @@ find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11
 Hot-Plug/Add physical device as new virtual SCSI disk
 
 ```bash
-qm set 592 -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
+qm set 140 -scsi1 /dev/disk/by-id/ata-Go-Infinity_221025628994
 ```
 ```
 ->  update VM 592: -scsi2 /dev/disk/by-id/ata-ST3000DM001-1CH166_Z1F41BLC
