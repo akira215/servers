@@ -75,6 +75,11 @@ Core: 2
 Memory (MiB): 4096
 Minimum memory (MiB): 2048
 
+#### Network
+Bridge: vmbr0
+Model: VirtIO
+
+
 ## MAJ système OMV
 
 ```bash
