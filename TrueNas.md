@@ -23,7 +23,7 @@ System > General Settings > Manage Configuration (top-right) > upload file (on t
 
 Mettre le shell en clavier francais
 ```bash
-kbdcontrol -l fr.iso.acc
+setxkbmap fr
 ```
 
 # Consumption
