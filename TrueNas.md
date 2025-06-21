@@ -55,11 +55,12 @@ $ find /sys | grep drivers.*02:00
 ```
 
 Optimize realtek drivers
-Refer to script
+Refer to script NOT WORKING
 find ID of te network adapter running `lspci`
 ```bash
 sudo echo 1 > /sys/bus/pci/devices/0000:01:00.0/link/l1_aspm
 ```
+ NOT WORKING
 
 
 Check available governors
@@ -71,6 +72,11 @@ Add a postinit command in System Settings - Advanced - Init/Shutdown Scripts:
 ```bash
 echo "performance" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
+# Adjustements
+Move the system dataset pool to SSD
+System > Advanced settings > Storage > System Dataset Pool -> Configure
+
+# Apps
 
 # Apps
 ```bash
